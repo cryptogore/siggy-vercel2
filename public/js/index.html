@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siggy Dormitory</title>
+  <link rel="icon" type="image/png" href="/img/ritual-symbol.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="/img/ritual-logo.png" alt="Ritual" class="sidebar-logo">
+      <span class="sidebar-title">Siggy</span>
+    </div>
+    <div class="newchat" id="btn-newchat">+ New Chat</div>
+    <div class="history-label">Recent</div>
+    <div id="history" class="history"></div>
+    <div class="archive-toggle" id="btn-archive">📦 Archived</div>
+    <div id="archive" class="archive-list"></div>
+  </div>
+
+  <!-- MOBILE MENU BUTTON -->
+  <div class="mobile-toggle" id="btn-mobile">☰</div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="symbol-container">
+      <img src="/img/ritual-symbol.png" class="symbol" alt="">
+    </div>
+
+    <div class="header">
+      <img src="/img/ai-avatar.png" class="header-avatar" alt="Siggy">
+      <div class="header-info">
+        <div class="header-name">🐱 Siggy</div>
+        <div class="header-status">Mystical Oracle Cat · Online</div>
+      </div>
+    </div>
+
+    <div id="messages" class="messages"></div>
+
+    <div class="input-area">
+      <input id="msg" type="text" placeholder="Ask Siggy something..." autocomplete="off">
+      <button id="btn-send">Send</button>
+    </div>
+  </div>
+
+  <!-- CONTEXT MENU -->
+  <div id="menu" class="context-menu"></div>
+
+  <!-- ALL LOGIC IN SEPARATE FILES -->
+  <script type="module" src="/js/app.js"></script>
+
+</body>
+</html>
